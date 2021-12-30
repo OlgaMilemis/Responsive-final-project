@@ -100,13 +100,15 @@ footer h4 {
   color: var(--tertiary-color);
   box-shadow: var(--box-shadow);
 }
-.contact-link:hover,
-.footer-link:hover {
-  color: black;
-}
-.footer-link {
+.footer-link,
+.amazon-link {
   color: var(--primary-color);
   text-decoration: none;
+}
+.contact-link:hover,
+.footer-link:hover,
+.amazon-link:hover {
+  color: black;
 }
 
 .projectDescription h2 {
