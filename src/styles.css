@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #ffb319;
+  --secondary-color: #ffe194;
+  --tertiary-color: #b8dfd8;
+  --background-color: #e8f6ef;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 100px auto;
+  background: var(--background-color);
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+nav {
+  background: var(--primary-color);
+  padding: 20px 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 30px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
+footer {
+  background: var(--secondary-color);
+  padding: 20px;
+}
+footer h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.pageHero {
+  background: var(--tertiary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.pageHero h2 {
+  font-size: 64px;
+}
+
+.pageHero h1 {
+  font-size: 96px;
+}
+
+.pageHero h3 {
+  font-size: 36px;
+}
+
+.projectsContainer {
+  padding: 160px 20px;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navigation-links a {
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.about-link {
+  display: block;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+}
+.about-link:hover {
+  color: black;
+}
+.contact-link {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+}
+.contact-link:hover,
+.footer-link:hover {
+  color: black;
+}
+.footer-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.projectDescription h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.btn-project {
+  margin: 20px;
+  padding: 20px 40px;
+  border-radius: 7px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.btn-project:hover {
+  color: black;
+}
+.blog {
+  color: var(--secondary-color);
+}
+.cooperation h2 {
+  font-family: "Oswald", sans-serif;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .projectDescription {
+    padding: 0;
+    text-align: center;
+  }
+  .aboutPage {
+    padding: 0;
+    text-align: center;
+  }
+}
